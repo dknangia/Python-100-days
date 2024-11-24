@@ -1,4 +1,4 @@
-print("Hello world from Python")
-print("1. Steps to make Double Bread\n")
-print("2. Another line.")
-print("3. Hello" + ' ' +'World')
+
+# We don't need any keyword to define variables in the Python
+name = input("What is you name?")
+print (name)
