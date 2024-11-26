@@ -25,15 +25,46 @@
 ##
 # BMI Calculator
 ##
-weight = 85
-height = 1.85
+# weight = 85
+# height = 1.85
+#
+# bmi = weight / (height ** 2)
+#
+# if bmi < 18.5:
+#     print("underweight")
+# elif bmi >= 18.5 and bmi < 25:
+#     print("normal weight")
+# elif bmi <= 25:
+#     print("overweight")
 
-bmi = weight / (height ** 2)
 
-if bmi < 18.5:
-    print("underweight")
-elif bmi >= 18.5 and bmi < 25:
-    print("normal weight")
-elif bmi <= 25:
-    print("overweight")
+###
+# Python pizaa delivery
+###
+
+print('Welcome to Python Pizza delivery')
+size = input("What size of pizza do you want? S, M, or L: ")
+pepperoni = input("Do you want Peperoni on your pizza? Y or N:")
+extra_cheese = input("Do you want extra cheese on your pizza? Y or N:")
+bill = 0
+
+if size == "s" or size == "S":
+    bill = 15
+
+elif size == "m" or size == "M":
+    bill = 20
+elif size == "l" or size == "L":
+    bill = 25
+
+if pepperoni == "Y" or pepperoni == "y":
+    if size == "L" or size == "M":
+        bill +=3
+    else :
+        bill += 1
+if extra_cheese == "y" or extra_cheese == "Y":
+    bill += 1
+
+
+print (f"Here is your total bill {bill}")
+
 
